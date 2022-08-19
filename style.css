@@ -7,7 +7,7 @@ body {
     font-family: space-mono, sans-serif;
     background-color:#eee9e4;
 }
-@media (min-width:800px)  { 
+@media (min-width:850px)  { 
     /* tablet, landscape iPad, lo-res laptops ands desktops */ 
     /* THIS IS OUR ENTIRE SIDEBAR */
 /* HEADER */
@@ -255,7 +255,7 @@ footer p {
 /
 /
 */
-@media (max-width:800px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (max-width:850px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 /* HEADER */
 /* HEADER */
 .row2 {
