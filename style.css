@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    scrollbar-width: none;
 }
 /* Style sheet Patrick Feeney GAZE FILM FESTIVAL */
 body {
@@ -32,11 +33,11 @@ header {
     overflow-y: hidden;
 }
 header h1 {
+    font-family: Helvetica, sans-serif;
     color: black;
     font-weight: 400; 
-    font-size: 4.3vw;
+    font-size: 3.9vw;
     white-space: nowrap;
-    margin-top: -1.2vw;
     /*
     text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
     */
