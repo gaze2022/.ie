@@ -11,9 +11,15 @@ body {
 @media (min-width:850px)  { 
     /* tablet, landscape iPad, lo-res laptops ands desktops */ 
     /* THIS IS OUR ENTIRE SIDEBAR */
+    /* NO SCROLL BAR COMMAND */
 body {
     overflow: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
     }
+body::-webkit-scrollbar {
+    display: none;
+}
 /* HEADER */
 .row2 {
     display: flex;
