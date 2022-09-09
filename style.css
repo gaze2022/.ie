@@ -10,6 +10,9 @@ body {
 @media (min-width:850px)  { 
     /* tablet, landscape iPad, lo-res laptops ands desktops */ 
     /* THIS IS OUR ENTIRE SIDEBAR */
+body {
+    overflow: hidden;
+    }
 /* HEADER */
 .row2 {
     display: flex;
@@ -200,14 +203,31 @@ a {
 .content p span {
     font-weight: 500;
 }
+/* TITLES */
 .content h1 {
     font-family: nimbus-sans-extended, sans-serif;
     font-weight: 300;
     font-size: 3vw;
+    padding-left: 3pt;
+}
+/* TITLES AS BUTTONS */
+.content a {
+    color:black;
+}
+.content a:hover h1 {
+    background-color:#e618ca;
+    color:#eee9e4;
+    border: 1px solid black;
 }
 figure {
     width: 47.4vw;
     height: auto;
+}
+.small {
+    width: 10vw !important;
+}
+.smaller {
+    width: 5vw !important;
 }
 figcaption {
     padding-right: 4vw;
@@ -217,7 +237,7 @@ figcaption {
 }
 /* FOOTER */
 footer {
-    height: 2vw;
+    height: 1.5vw;
     background-color: #eee9e4;
     border: 1px solid black;
     position: fixed;
@@ -230,7 +250,16 @@ footer p {
     color: black;
     font-size: 0.8vw;
     text-align: left;
-    padding: 0.3vw;
+    padding: 0.1vw;
+}
+/* SIGN UP NEWSLETTER */
+#mc_embed_signup {
+    list-style: none;
+    clear: left;
+    font: 14px Helvetica,Arial,sans-serif;
+}
+li {
+    list-style: none !important;
 }
 /* Keyframes for infinite scroll animation */
 @keyframes scrollText {
@@ -411,6 +440,11 @@ a {
     font-family: nimbus-sans-extended, sans-serif;
     font-weight: 300;
     font-size: 6vw;
+    background-color:#e618ca;
+    color:#eee9e4;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 1.5vw;
 }
 figure {
     width: 90vw;
