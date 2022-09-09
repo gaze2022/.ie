@@ -73,12 +73,17 @@ header::-webkit-scrollbar {
     height: 100vh;
 }
 .container { /* OUR SUB CONTAINER */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
     position: inline-block;
     border-right: 1pt solid black;
     text-align: center;
     background-color: #eee9e4;
     height: 100vh;
     overflow: scroll;
+}
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 .container img {
     height: relative;
