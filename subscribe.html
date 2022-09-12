@@ -134,7 +134,8 @@
         </article>
     </body>
     <script>
-        document.addEventListener("DOMContentLoaded", function(event) { 
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            document.addEventListener("DOMContentLoaded", function(event) { 
             var scrollpos = localStorage.getItem('scrollpos');
             if (scrollpos) window.scrollTo(0, scrollpos);
         });
@@ -142,5 +143,6 @@
         window.onbeforeunload = function(e) {
             localStorage.setItem('scrollpos', window.scrollY);
         };
+}
     </script>
 </html>
