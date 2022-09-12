@@ -4,6 +4,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.typekit.net/epj3mjc.css">
+         <!-- This is to keep scroll posiiton, should effect desktop as there is no scroll on main body -->
+        <script type="text/javascript">
+            window.onbeforeunload = function () {
+               var scrollPos;
+               if (typeof window.pageYOffset != 'undefined') {
+                   scrollPos = window.pageYOffset;
+               }
+               else if (typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat') {
+                   scrollPos = document.documentElement.scrollTop;
+               }
+               else if (typeof document.body != 'undefined') {
+                   scrollPos = document.body.scrollTop;
+               }
+               document.cookie = "scrollTop=" + scrollPos;
+           }
+           window.onload = function () {
+               if (document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null) {
+                   var arr = document.cookie.match(/scrollTop=([^;]+)(;|$)/);
+                   document.documentElement.scrollTop = parseInt(arr[1]);
+                   document.body.scrollTop = parseInt(arr[1]);
+               }
+           }
+       </script>
     </head>
     <body>
         <div class="row2">
@@ -194,26 +217,4 @@
              </footer>
         </article>
     </body>
-    <script type="text/javascript">
-        window.onbeforeunload = function () {
-           var scrollPos;
-           if (typeof window.pageYOffset != 'undefined') {
-               scrollPos = window.pageYOffset;
-           }
-           else if (typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat') {
-               scrollPos = document.documentElement.scrollTop;
-           }
-           else if (typeof document.body != 'undefined') {
-               scrollPos = document.body.scrollTop;
-           }
-           document.cookie = "scrollTop=" + scrollPos;
-       }
-       window.onload = function () {
-           if (document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null) {
-               var arr = document.cookie.match(/scrollTop=([^;]+)(;|$)/);
-               document.documentElement.scrollTop = parseInt(arr[1]);
-               document.body.scrollTop = parseInt(arr[1]);
-           }
-       }
-   </script>
 </html>
