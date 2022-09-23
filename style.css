@@ -320,6 +320,9 @@ li {
 .container2 {
     position: inline-block;
 }
+audio {
+    display: none;
+}
 header {
     border: 1pt solid black;
     height: fit-content;
