@@ -22,7 +22,13 @@ body::-webkit-scrollbar {
 }
 /* AUDIO */
 audio {
-    display: none;
+    height: 2vw;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e618ca;
+    border: 1px solid black;
 }
 /* HEADER */
 .row2 {
