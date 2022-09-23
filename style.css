@@ -20,6 +20,10 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+/* AUDIO */
+audio {
+    display: none;
+}
 /* HEADER */
 .row2 {
     display: flex;
