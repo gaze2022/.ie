@@ -188,7 +188,8 @@ a {
 }
 /* FIGURE STYLES */
 #scroll figure {
-    animation: scrollGallery 60s infinite linear;
+    /* ANimation (dont forget the keyframes at the end of the doc */
+    animation: scrollGallery 180s infinite linear;
     background-color:#e618ca;
     border: 1px solid black;
 }
@@ -280,7 +281,7 @@ li {
   }
   @keyframes scrollGallery {
     from   { transform: translateY(0%); }
-    to { transform: translateY(-110vw); }
+    to { transform: translateY(-348vw); }
   }
 }
 /* 
